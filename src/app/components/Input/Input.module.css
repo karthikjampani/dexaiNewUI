@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.label {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.required {
+  color: #ff284c; /* red star */
+  margin-left: 2px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ffffff80; /* semi-transparent white */
+  border-radius: 50px; /* pill shape */
+  background: transparent;
+  color: #fff;
+
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input::placeholder {
+  color: #ffffff80;
+}
+
+.input:focus {
+  border-color: #ffffff; /* solid white when focused */
+}

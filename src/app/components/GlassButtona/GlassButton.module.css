@@ -1,0 +1,22 @@
+.glassButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.glassButton:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+.glassButton:active {
+  transform: scale(0.98);
+}

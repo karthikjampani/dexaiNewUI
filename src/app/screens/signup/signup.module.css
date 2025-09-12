@@ -1,0 +1,86 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(105.83deg, #ff284c 0%, #042f6f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.aiText {
+  position: fixed;
+  bottom: -20%;
+  right: -3%;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  line-height: 1.38;
+  opacity: 0.1;
+  user-select: none;
+  pointer-events: none;
+  color: #ffffff;
+  font-size: clamp(120px, 25vw, 550px);
+}
+
+.page {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(105.83deg, #ff284c 0%, #042f6f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+
+  background: #ffffff1c; /* semi-transparent white */
+  border: 1px solid #ffffff40; /* border */
+  border-radius: 20px;
+  backdrop-filter: blur(8px); /* glass effect */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.left {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* logo css */
+
+.left h1 {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Anta", sans-serif;
+}
+
+.logo {
+  max-width: 250px;
+  height: auto;
+}
+.description {
+  max-width: 526px; /* match figma width */
+  font-size: 16px; /* readable size */
+  line-height: 1.5; /* good spacing between lines */
+  text-align: center; /* center under logo (or use left if you want it aligned like Figma) */
+  color: rgba(255, 255, 255, 0.8); /* softer white, similar to figma */
+  margin-top: 20px; /* spacing below logo */
+}
