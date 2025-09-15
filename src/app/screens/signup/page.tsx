@@ -7,6 +7,10 @@ import GlassButton from "../../components/GlassButtona/GlassButton";
 const SignUp = () => {
   return (
     <div className={styles.container}>
+      <div className={styles.patternWrapper}>
+        <img src="/triadpattren.svg" alt="Pattern" className={styles.pattern} />
+      </div>
+
       {/* Left Side */}
       <div className={styles.left}>
         <h1>Welcome to</h1>
@@ -18,6 +22,7 @@ const SignUp = () => {
           height={208}
           className={styles.logo}
         />
+
         <br />
         <h3>“Introducing new features”</h3>
         <br />

@@ -1,6 +1,7 @@
 .container {
   height: 100vh;
   width: 100%;
+  position: absolute;
   background: linear-gradient(105.83deg, #ff284c 0%, #042f6f 100%);
   display: flex;
   align-items: center;
@@ -83,4 +84,39 @@
   text-align: center; /* center under logo (or use left if you want it aligned like Figma) */
   color: rgba(255, 255, 255, 0.8); /* softer white, similar to figma */
   margin-top: 20px; /* spacing below logo */
+}
+
+.pattern {
+  position: absolute;
+  top: 200px; /* move pattern down, adjust as needed */
+  left: 0;
+  width: 50%; /* control zoom */
+  height: auto;
+  opacity: 0.1111; /* base transparency */
+  pointer-events: none;
+  z-index: 0;
+
+  /* Flip upside down and scale */
+  transform: scaleY(-1) scale(1.2); /* keep zoom and orientation */
+  transform-origin: bottom left; /* keep bottom fixed */
+
+  /* Fade out as it goes down */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+.pattern {
+  width: 100%;
+  height: 100%;
+  transform: scale(2);
+  transform-origin: bottom left; /* ✅ keep bottom fixed */
+  overflow: hidden;
 }
