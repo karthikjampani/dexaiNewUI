@@ -193,7 +193,10 @@
   justify-content: space-between;
   gap: 15px;
 }
-
+.createAccount {
+  font-size: 16px;
+  font-weight: 500;
+}
 .googleBtn,
 .facebookBtn {
   flex: 1;
@@ -201,7 +204,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-
+  font-family: var(--font-aoboshi), sans-serif;
   padding: 8px 14px; /* ⬇️ reduced height */
   border-radius: 40px; /* keep pill shape */
   border: none;
@@ -237,8 +240,9 @@
 }
 
 .welcome {
-  font-size: 24px;
-  font-weight: 600;
+  font-family: var(--font-aoboshi), sans-serif;
+  font-size: 42px;
+  font-weight: 400;
   color: #fff;
   margin: 0; /* remove default h2 margin */
 }
@@ -247,7 +251,9 @@
   composes: glassButton;
   padding: 14px 20px; /* ⬆️ taller height */
   border-radius: 40px;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 400;
   min-width: 200px; /* slightly wider */
-  height: 48px; /* match Sign In button height */
+  height: 53px; /* match Sign In button height */
+  font-family: var(--font-aoboshi), sans-serif;
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Aoboshi_One } from "next/font/google"; // ✅ add this
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +11,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const aoboshiOne = Aoboshi_One({
+  variable: "--font-aoboshi",
+  subsets: ["latin"],
+  weight: "400", // optional, default 400
 });
 
 export const metadata: Metadata = {
@@ -24,7 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${aoboshiOne.variable}`}
+      >
         {children}
       </body>
     </html>
