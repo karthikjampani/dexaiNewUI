@@ -1,0 +1,50 @@
+.background {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(105.83deg, #ff284c 0%, #042f6f 100%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.pattern {
+  position: absolute;
+  inset: 0;
+  background: url("/Background.svg") no-repeat center;
+  background-size: cover;
+  opacity: 0.3;
+
+  /* combine bottom fade + left→right fade */
+  -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    /* top → bottom */
+      linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%); /* left → right */
+  -webkit-mask-composite: destination-in;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+
+  mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  mask-composite: intersect;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+.pattern img {
+  width: 200%;
+  height: auto;
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* keep form above svg */
+}

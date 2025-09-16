@@ -6,6 +6,7 @@ export default function Home() {
     <div className={styles.page}>
       <h1>Home</h1>
       <a href="/screens/signup">Go to SignUp</a>
+      <a href="/screens/dashboard">Go to dashboard</a>
     </div>
   );
 }
