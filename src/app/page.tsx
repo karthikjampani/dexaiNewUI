@@ -7,6 +7,7 @@ export default function Home() {
       <h1>Home</h1>
       <a href="/screens/signup">Go to SignUp</a>
       <a href="/screens/dashboard">Go to dashboard</a>
+      <a href="/screens/OnBoarding">Go to on boarding</a>
     </div>
   );
 }

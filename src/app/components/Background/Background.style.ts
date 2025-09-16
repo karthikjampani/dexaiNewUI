@@ -48,7 +48,7 @@ export const BackgroundStyles = {
 
   Content: styled.div`
     position: relative;
-    z-index: 1; /* keep form above svg */
+    z-index: 1;
   `,
 
   BottomRightText: styled.div`
